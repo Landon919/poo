@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Inicio</title>
+    <link rel="icon" type="image/svg" href="img/logo.svg">
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+    <header>
+        <div class="left">
+            <div class="menu-container">
+                <div class="menu" id="menu">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+            <div class="brand">
+                <img src="img/home.svg" alt="icon-home" class="logo">
+                <span class="name">Invex</span>
+            </div>
+        </div>
+        <div class="right">
+            <a href="#">
+                <img src="img/notification.svg" alt="notification">
+            </a>
+            <a href="#">
+                <img src="img/inf.svg" alt="user">
+            </a>
+            <a href="#">
+                <img src="img/user.svg" alt="user">
+            </a>
+        </div>
+    </header>
+    <div class="side-bar" id="sidebar">
+        <nav>
+            <ul>
+                <li>
+                    <a href="#" class="selected">
+                        <img src="img/home2.svg" alt="">
+                        <span>Pagina de inicio</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="dashboardA.html">
+                        <img src="img/add.svg" alt="">
+                        <span>Agregar producto</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="dashboardB.html">
+                        <img src="img/file.svg" alt="">
+                        <span>Inspeccionar productos</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="dashboardD.html">
+                        <img src="img/sell.svg" alt="">
+                        <span>Registrar venta</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="dashboardC.html">
+                        <img src="img/sale.svg" alt="">
+                        <span>Registro de ventas</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" id="logoutBtn">
+                        <img src="img/logout.svg" alt="">
+                        <span>Cerrar sesión</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <main class="home-content" id="home-content">
+        <section class="hero">
+        <div class="overlay"></div>
+
+        <div class="hero-text">
+            <h1>Bienvenido a Invex</h1>
+            <p>Sistema de inventario</p>
+        </div>
+
+        <div class="stats">
+            <div class="card">
+                <h3>Productos</h3>
+                <p id="productos-total">0</p>
+            </div>
+
+            <div class="card">
+                <h3>Ventas</h3>
+                <p id="ventas-total">0</p>
+            </div>
+        </div>
+    </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+    <script src="java/supabase.js"></script>
+    <script src="java/dashboard.js"></script>
+</body>
+</html>
